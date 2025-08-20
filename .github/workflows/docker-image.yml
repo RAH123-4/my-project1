@@ -28,7 +28,5 @@ jobs:
       # 4️⃣ Build and Push Docker Image
       - name: Build and Push Image
         run: |
-          IMAGE_NAME=rah123-4/my-project1
-          echo "Building Docker image $IMAGE_NAME:latest"
-          docker build -t $IMAGE_NAME:latest .
-          docker push $IMAGE_NAME:latest
+          docker build -t project12 .
+          docker push project12
